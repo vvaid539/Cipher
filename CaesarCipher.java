@@ -1,6 +1,3 @@
-//CSCI 1913 Fall 2022 Project 2
-//Author: Vedant Vaid
-
 /**
  * The class CaeserCipher extends the BaseCipher class. It
  * creates a CaeserCipher object with a int key attribute.
