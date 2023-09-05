@@ -1,6 +1,3 @@
-//CSCI 1913 Fall 2022 Project 2
-//Author: Vedant Vaid
-
 /**
  * This class EncryptUtils creates functions to encrypt or decrypt an array of strings many times
  */
