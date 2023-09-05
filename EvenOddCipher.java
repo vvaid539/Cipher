@@ -1,6 +1,3 @@
-//CSCI 1913 Fall 2022 Project 2
-//Author: Vedant Vaid
-
 /**
  * The class EvenOddCipher extends the BaseCipher class.
  * Furthermore, it does not have any attributes
