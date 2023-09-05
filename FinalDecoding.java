@@ -1,6 +1,19 @@
+// Decode this text... What we know:
+//  * First, a series of words has been replaced
+//     * "world" -> "neighborhood"
+//     * "enigma device" -> "grill"
+//     * "fort knox" -> "my garage"
+//     * "omni-matrix" -> "propane-tank"
+//     * "fort knox" -> "my garage"
+//  * Then an even - odd cipher is used
+//  * Finally, a ceaser cipher is used with key 5.
+// In this file
+//  * Make a series of Cipher objects
+//  * Pack them into an appropriate SuperCipher
+//  * Use the SuperCipher object to decode this secret message.
+
 import java.util.Arrays;
-//CSCI 1913 Fall 2022 Project 2
-//Author: Vedant Vaid
+
 public class FinalDecoding {
     public static void main(String[] args) {
         String[] encoded = {
@@ -10,20 +23,7 @@ public class FinalDecoding {
                 "ufjytn was tjyr txrs msjuhj.yjutfjys jqdijsybs tbw nmyn wq.yn nqyp tjyr.kwzfjdyjsnmtmt wj tx' sbnrmw j.x tlf mdisypt,na t njmx b xutnlrw njhsznlyf cjyi m wus-fpwfq tx' fyy tpby mxlnq mxbq fjxr nj tysyq m jlgwtitiwijsypt ' jjdy tqs xyj t' sb 'jlyyr."
 
         };
-        // Your job is to decode this text... What we know:
-        //  * First, a series of words has been replaced
-        //     * "world" -> "neighborhood"
-        //     * "enigma device" -> "grill"
-        //     * "fort knox" -> "my garage"
-        //     * "omni-matrix" -> "propane-tank"
-        //     * "fort knox" -> "my garage"
-        //  * Then an even - odd cipher is used
-        //  * Finally, a ceaser cipher is used with key 5.
-        // In this file, your job will be to
-        //  * Make a series of Cipher objects
-        //  * Pack them into an appropriate SuperCipher
-        //  * Use the SuperCipher object to decode this secret message.
-
+        
         BaseCipher[] cipherChain = {
                 new WordReplacementCipher("world", "neighborhood"),
                 new WordReplacementCipher("enigma device", "grill"),
