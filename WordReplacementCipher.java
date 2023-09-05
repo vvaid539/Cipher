@@ -1,6 +1,3 @@
-//CSCI 1913 Fall 2022 Project 2
-//Author: Vedant Vaid
-
 /**
  * The WordReplacementCipher extends the BaseCipher class. A WordReplacementCipher object has 2
  * attributes which are a String wordToReplaceFrom and a String worldToReplaceTo
